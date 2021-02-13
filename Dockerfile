@@ -44,7 +44,7 @@ EXPOSE 8080
 
 # deploy app
 
-ADD /root/.jenkins/workspace/jboss-wildfly-preprod/webapp/target/webapp.war "$JBOSS_HOME/standalone/deployments/webapp.war"
+ADD ~/.jenkins/workspace/jboss-wildfly-preprod/webapp/target/webapp.war "$JBOSS_HOME/standalone/deployments/webapp.war"
 
 RUN mkdir -p "$JBOSS_HOME/standalone/deployments/jenkins"
 
